@@ -1,0 +1,34 @@
+git push ke github
+
+new applikasi/projek blog
+rails new blog
+
+generate scaffold
+rails generate scaffold Post title:string category_id:integer content:text
+
+jalankan server
+rails server
+
+coba akses di browser
+http://localhost:3000/posts
+
+migrate database
+rake db:migrate RAILS_ENV=development
+
+========================================================================================
+Memulai Projek Blog
+========================================================================================
+Setelah kita generate post (diatas) maka kita akan melanjutkan untuk generate scafold category
+rails generate scaffold Category category_id:integer category:string parent_id:integer
+
+migrate database
+rake db:migrate RAILS_ENV=development
+
+coba akses di browser
+http://localhost:3000/categories
+
+
+ubah di view post, untuk category menggunakan dropdown
+<%= f.select :category_id, Category.all.collect {|category| [ category.category, category.id ] } %> 
+
+ubah index view agar category_id menjadi category name
