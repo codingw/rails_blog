@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'will_paginate', '~> 3.0.pre2'
+
 gem 'bcrypt-ruby', :require => 'bcrypt'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -44,4 +46,3 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'will_paginate', '~> 3.0.pre2'
