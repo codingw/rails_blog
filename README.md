@@ -1,4 +1,4 @@
 rails_blog
 ==========
 
-rails blog
+ rails blog
